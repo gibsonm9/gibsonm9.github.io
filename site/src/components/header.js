@@ -1,15 +1,24 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import Dropdown from 'react-bootstrap/Dropdown';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+const StyledDropdown = styled(Dropdown)`
+  float: right;
+`
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `1.45rem`,
+      display: `flex`,
+      flexDirection: `row`,
+      justifyContent: `space-between`,
     }}
   >
-  <nav className="navbar navbar-light">
-    <div
+    <div href="#home"
       style={{
         maxWidth: 960,
         fontFamily: `IM Fell English`,
@@ -28,35 +37,16 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h3>
     </div>
-    <button 
-      className="btn navbar-toggler"
-      id="dropdownMenuButton"
-      type="button"
-      data-toggle="dropdown"
-      aria-haspopup="true"
-      aria-expanded="false"
-    >
-      <span 
-        className="navbar-toggler-icon">
-      </span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item active">
-          <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <StyledDropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        <FontAwesomeIcon icon={"bars"} />
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </StyledDropdown>
   </header>
 )
 

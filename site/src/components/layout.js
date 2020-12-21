@@ -8,9 +8,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 import Header from "./header"
 import "./layout.css"
+
+// adds fontawesome bars icon to the fontawesome library
+library.add(faBars)
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
