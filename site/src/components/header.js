@@ -10,10 +10,6 @@ const StyledDropdown = styled(Dropdown)`
   float: right;
 `;
 
-const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  font-size: 20px;
-`;
-
 // The forwardRef is important!!
 // Dropdown needs access to the DOM node in order to position the Menu
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
