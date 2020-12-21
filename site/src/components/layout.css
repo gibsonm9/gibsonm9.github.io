@@ -3,5 +3,10 @@
 
 html body {
 	background-color: #f7f1e6;
-	font-family: 'IM Fell English SC', serif;
+	font-family: 'IM Fell English', serif;
+
+}
+
+a {
+	color: #086880 !important;
 }

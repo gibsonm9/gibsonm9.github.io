@@ -4,10 +4,45 @@ import React from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { DARK_BROWN, LIGHTER_DARK_BROWN } from "./colors"
 
 const StyledDropdown = styled(Dropdown)`
   float: right;
-`
+`;
+
+const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  font-size: 20px;
+`;
+
+// The forwardRef is important!!
+// Dropdown needs access to the DOM node in order to position the Menu
+const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+  <StyledToggleDiv>
+    <StyledToggleLink
+      href=""
+      ref={ref}
+      onClick={(e) => {
+        e.preventDefault();
+        onClick(e);
+      }}
+    ><FontAwesomeIcon icon={"bars"} />
+    </StyledToggleLink>
+  </StyledToggleDiv>
+));
+
+const StyledToggleDiv = styled.div`
+  margin: 1.5rem;
+  font-size: 20px;
+`;
+
+const StyledToggleLink = styled.a`
+  color: ${LIGHTER_DARK_BROWN};
+
+  &:hover {
+    color: ${DARK_BROWN};
+  }
+`;
+
 
 const Header = ({ siteTitle }) => (
   <header
@@ -22,7 +57,7 @@ const Header = ({ siteTitle }) => (
       style={{
         maxWidth: 960,
         fontFamily: `IM Fell English`,
-        margin: `1rem`
+        margin: `1.5rem`
       }}
     >
       <h3 style={{ margin: 0 }}>
@@ -30,7 +65,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             textDecoration: `none`,
-            color: `#593d11`,
+            color: DARK_BROWN,
           }}
         >
           {siteTitle}
@@ -38,13 +73,15 @@ const Header = ({ siteTitle }) => (
       </h3>
     </div>
     <StyledDropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        <FontAwesomeIcon icon={"bars"} />
+      <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
       </Dropdown.Toggle>
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        <Dropdown.Item href="#/about">About</Dropdown.Item>
+        <Dropdown.Item href="#/cv">CV</Dropdown.Item>
+        <Dropdown.Item href="#/research">Research</Dropdown.Item>
+        <Dropdown.Item href="#/teaching">Teaching</Dropdown.Item>
+        <Dropdown.Item href="#/pict">PICT</Dropdown.Item>
+        <Dropdown.Item href="#/contact">Contact</Dropdown.Item>
       </Dropdown.Menu>
     </StyledDropdown>
   </header>
