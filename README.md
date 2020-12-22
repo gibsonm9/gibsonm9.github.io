@@ -8,9 +8,9 @@ We still need to do the following when we get a chance on Marcus' admin account:
 - develop is the branch that the source branch publishes to. To publish to develop, run `npm run deploy`.
 
 ## Resources
-https://www.gatsbyjs.com/docs/ for documentation on the framework used to create, package, and deploy this website.
-https://reactjs.org/docs/getting-started.html for documentation on the framework used to create components within the website.
-https://react-bootstrap.github.io/ for documentation on the library used to style components within the website.
+- https://www.gatsbyjs.com/docs/ for documentation on the framework used to create, package, and deploy this website.
+- https://reactjs.org/docs/getting-started.html for documentation on the framework used to create components within the website.
+- https://react-bootstrap.github.io/ for documentation on the library used to style components within the website.
 
 ### Important Files and Folders
 - src contains the source code of the website
