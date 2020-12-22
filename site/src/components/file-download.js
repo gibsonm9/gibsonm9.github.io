@@ -12,7 +12,11 @@ const DownloadLink = (props) => {
     }
   `)
 
-  return (<a href={data.allFile.nodes[0].publicURL} download>{props.linkText}</a>)
+  return (
+    <a href={data.allFile.nodes[0].publicURL} download>
+      {props.linkText}
+    </a>
+  )
 }
 
 export default DownloadLink

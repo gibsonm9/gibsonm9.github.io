@@ -8,5 +8,9 @@ html body {
 }
 
 a {
-	color: #086880 !important;
+	color: rgb(8, 104, 128) !important;
+}
+
+a:hover {
+	color: #064b5c !important;
 }
