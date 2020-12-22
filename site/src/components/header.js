@@ -50,14 +50,16 @@ const Header = ({ siteTitle }) => (
       flexDirection: `row`,
       justifyContent: `space-between`,
       position: `fixed`,
-      width: `100%`
+      width: `100%`,
+      backgroundColor: `#f7f1e6`,
+      zIndex: 3,
     }}
   >
     <div href="#home"
       style={{
         maxWidth: 960,
         fontFamily: `IM Fell English`,
-        margin: `1.5rem`
+        margin: `1.5rem`,
       }}
     >
       <h3 style={{ margin: 0 }}>

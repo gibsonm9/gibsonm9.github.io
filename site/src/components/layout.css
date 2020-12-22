@@ -25,6 +25,10 @@ a:hover {
 	padding: 0.35em 1.5em !important;
 }
 
+.dropdown-item:active {
+	background-color: #f8f9fa !important;
+}
+
 .dropdown-menu {
 	opacity: 1;
 	animation-name: fadeInOpacity;

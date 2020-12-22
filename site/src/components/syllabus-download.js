@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const DownloadLink = (props) => {
+const SyllabusDownloadLink = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativePath: { eq: "resume.pdf" }}) {
+      allFile(filter: { relativePath: { eq: "syllabus.pdf" }}) {
         nodes {
           publicURL
         }
@@ -19,4 +19,4 @@ const DownloadLink = (props) => {
   )
 }
 
-export default DownloadLink
+export default SyllabusDownloadLink

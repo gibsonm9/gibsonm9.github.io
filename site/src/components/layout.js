@@ -14,7 +14,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Header from "./header"
 import "./layout.css"
 
-// adds fontawesome bars icon to the fontawesome library
+// adds fontawesome icons to the fontawesome library
 library.add(faBars)
 
 const Layout = ({ children }) => {
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `7rem 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
