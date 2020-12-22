@@ -12,7 +12,7 @@ We still need to do the following when we get a chance on Marcus' admin account:
 - https://reactjs.org/docs/getting-started.html for documentation on the framework used to create components within the website.
 - https://react-bootstrap.github.io/ for documentation on the library used to style components within the website.
 
-### Important Files and Folders
+## Important Files and Folders
 - src contains the source code of the website
   - src/components contains react components, which in the react framework, are building blocks of a website
   - src/data contains all non-image files (usually things like pdfs for download)
@@ -21,7 +21,7 @@ We still need to do the following when we get a chance on Marcus' admin account:
 - gatsby-config.js contains some plugins needed for proper functioning of the site, including a plugin to create styled components, and one for file downloading.
 - package.json specifies all npm libraries installed for use in the app. It also includes scripts you can use for development. The only two you should really need are `gatsby develop`, which enables your local server to start and the website to run so that you can see the changes you make, and `npm run deploy`, which publishes your site. You can add scripts to your liking.
 
-### Important Git Commands
+## Important Git Commands
 - git add -u
   - stages all changes to existing files for commit
 - git add .
