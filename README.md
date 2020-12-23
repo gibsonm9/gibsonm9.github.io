@@ -36,3 +36,10 @@ We still need to do the following when we get a chance on Marcus' admin account:
   - removes all changes made since last commit
 - git stash pop
   - reapplies last stashed changes
+
+## Example Sites
+- https://mycareer.qodeinteractive.com/james/
+- https://dribbble.com/shots/1823824/attachments/302859?mode=media
+- https://colorlib.com/preview/#noah
+- jeremiahcarey.com
+- ccohoe.com
