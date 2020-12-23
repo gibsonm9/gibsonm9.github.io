@@ -6,7 +6,8 @@ export const StyledContentSection = styled.div`
 `
 
 export const StyledContentHeading = styled.h2`
-  font-family: 'IM Fell English SC';
+  font-family: 'Raleway';
+  font-weight: 200;
   color: ${MUTED_TEAL};
-  border-bottom: 1px solid ${LIGHT_TEAL};
+  padding: .2em 0;
 `

@@ -8,8 +8,9 @@ import { DARK_BROWN, LIGHTER_DARK_BROWN } from "./colors"
 
 const StyledDropdown = styled(Dropdown)`
   position: absolute;
-  right: 0%;
-  font-family: 'IM Fell English SC';
+  right: 1em;
+  top: .5em;
+  font-family: 'Raleway';
 `;
 
 // The forwardRef is important!!
@@ -51,14 +52,13 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
       position: `fixed`,
       width: `100%`,
-      backgroundColor: `#f7f1e6`,
+      backgroundColor: `#fff`,
       zIndex: 3,
     }}
   >
     <div href="#home"
       style={{
-        maxWidth: 960,
-        fontFamily: `IM Fell English`,
+        fontFamily: `Raleway`,
         margin: `1.5rem`,
       }}
     >
@@ -70,7 +70,7 @@ const Header = ({ siteTitle }) => (
             color: DARK_BROWN,
           }}
         >
-          {siteTitle}
+          {/*siteTitle*/}
         </Link>
       </h3>
     </div>
@@ -78,12 +78,12 @@ const Header = ({ siteTitle }) => (
       <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
       </Dropdown.Toggle>
       <Dropdown.Menu>
-        <Dropdown.Item href="#/about">about</Dropdown.Item>
-        <Dropdown.Item href="#/cv">cv</Dropdown.Item>
-        <Dropdown.Item href="#/research">research</Dropdown.Item>
-        <Dropdown.Item href="#/teaching">teaching</Dropdown.Item>
-        <Dropdown.Item href="#/pict">pict</Dropdown.Item>
-        <Dropdown.Item href="#/contact">contact</Dropdown.Item>
+        <Dropdown.Item href="#about">About</Dropdown.Item>
+        <Dropdown.Item href="#cv">CV</Dropdown.Item>
+        <Dropdown.Item href="#research">Research</Dropdown.Item>
+        <Dropdown.Item href="#teaching">Teaching</Dropdown.Item>
+        <Dropdown.Item href="#pict">PICT</Dropdown.Item>
+        <Dropdown.Item href="#contact">Contact</Dropdown.Item>
       </Dropdown.Menu>
     </StyledDropdown>
   </header>
