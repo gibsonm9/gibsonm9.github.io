@@ -9,6 +9,7 @@ import AboutSection from "../components/sections/about"
 import ResearchSection from "../components/sections/research"
 import TeachingSection from "../components/sections/teaching"
 import PictSection from "../components/sections/pict"
+import ContactSection from "../components/sections/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <ResearchSection />
     <TeachingSection />
     <PictSection />
+    <ContactSection />
   </Layout>
 )
 

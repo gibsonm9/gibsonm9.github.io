@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const StyledLandingSection = styled(Row)`
-  margin-top: 7em;
+  margin-top: 12vh;
   margin-bottom: 2em;
 `
 
@@ -16,6 +16,16 @@ const StyledCol = styled(Col)`
 	@media (max-width: 1000px) {
 	  padding-top: 3em;
 	}
+`
+
+const CenteredContainer = styled.div`
+	margin: auto;
+	text-align: center;
+`
+
+const StyledImageContainer = styled.div`
+	max-width: 30em;
+	margin: auto;
 `
 
 const StyledTextSection = styled.div`
@@ -30,7 +40,11 @@ const StyledHeaderText = styled.div`
 const LandingSection = () => (
 	<StyledLandingSection>
 	  <Col>
-	    <Image/>
+	  	<CenteredContainer>
+	  		<StyledImageContainer>
+	    		<Image/>
+	    	</StyledImageContainer>
+    	</CenteredContainer>
 	  </Col>
 	  <StyledCol lg={8}>
 		  <StyledContentSection>

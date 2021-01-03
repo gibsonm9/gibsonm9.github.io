@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components"
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import ResumeDownloadLink from "./resume-download"
+import ResumeDownloadLink from "./resume-download";
 
 export const PaddedNavText = styled.div`
   padding: 0 1.5em;
