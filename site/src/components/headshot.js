@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import styled from 'styled-components'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,11 +15,18 @@ import Img from "gatsby-image"
  */
 
 const Image = () => {
+
+  const StyledImage = styled(Img)`
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    // box-shadow: 0 0 5px 5px #f7f1e6 inset;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  `;
+
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "PICT.png" }) {
+      placeholderImage: file(relativePath: { eq: "headshot.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,7 +38,7 @@ const Image = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <StyledImage fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default Image
+export { Image }

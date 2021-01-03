@@ -13,7 +13,7 @@ const ResumeDownloadLink = (props) => {
   `)
 
   return (
-    <a href={data.allFile.nodes[0].publicURL} download>
+    <a id={props.id} href={data.allFile.nodes[0].publicURL} download>
       {props.linkText}
     </a>
   )

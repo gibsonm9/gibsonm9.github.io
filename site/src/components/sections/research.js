@@ -4,7 +4,7 @@ import { StyledContentSection, StyledContentHeading } from "../section-helpers"
 import { MUTED_TEAL } from "../colors"
 
 const StyledDescription = styled.div`
-  padding: 1em 0;
+  padding-top: 1em;
 `
 
 const StyledTitle = styled.h5`
@@ -12,14 +12,16 @@ const StyledTitle = styled.h5`
 `
 
 const StyledTextSection = styled.div`
-  padding: .5em 0 1em 0;
+  padding: .5em 0 2em 0;
+  
+  &:last-child {
+  	padding-bottom: 0;
+  }
 `
 
-const StyledAward = styled.p`
+const StyledAward = styled.div`
   font-family: 'Raleway';
   color: ${MUTED_TEAL};
-  // text-align: right;
-  line-height: 5px;
 `
 
 const ResearchSection = () => (

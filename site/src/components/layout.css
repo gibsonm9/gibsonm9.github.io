@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
 html body {
-	/*background-color: #f7f1e6;*/
 	background-color: #fff;
 	font-family: 'Raleway', serif;
 	font-weight: 400;
@@ -13,30 +12,15 @@ a {
 	color: rgb(8, 104, 128) !important;
 }
 
+#download {
+	color: #fff !important;
+	&:hover {
+		color: #fff !important;
+	}
+}
+
 a:hover {
 	color: #064b5c !important;
-}
-
-.dropdown-menu.show {
-	box-shadow: rgba(0, 0, 0, 0.1) 5px 3px 18px 4px !important;
-	border: none !important;
-	margin-top: .5em !important;
-}
-
-.dropdown-item {
-	padding: 0.35em 1.5em !important;
-}
-
-.dropdown-item:active {
-	background-color: #f8f9fa !important;
-}
-
-.dropdown-menu {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: .2s;
 }
 
 @keyframes fadeInOpacity {

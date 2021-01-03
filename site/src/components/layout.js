@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
-          margin: `0 20rem`,
+          margin: `0 15%`,
           padding: `7rem 1.0875rem 1.45rem`,
         }}
       >
