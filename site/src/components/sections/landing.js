@@ -30,7 +30,9 @@ const StyledImageContainer = styled.div`
 
 const StyledTextSection = styled.div`
   min-height: 30em;
-  margin-left: 3.5%;
+  @media (min-width: 1000px) {
+	margin-left: 3.5%;
+  }
 `
 
 const StyledHeaderText = styled.div`

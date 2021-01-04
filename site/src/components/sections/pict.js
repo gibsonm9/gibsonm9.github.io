@@ -14,6 +14,8 @@ const StyledPictSection = styled.div`
 
 const StyledImageContainer = styled.div`
   max-width: 300px;
+  position: relative;
+  top: -2em;
   min-width: 200px;
   width: 100%;
   margin: auto;
