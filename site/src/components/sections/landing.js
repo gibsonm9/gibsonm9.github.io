@@ -31,8 +31,9 @@ const StyledImageContainer = styled.div`
 const StyledTextSection = styled.div`
   min-height: 30em;
   @media (min-width: 1000px) {
-	margin-left: 3.5%;
-  }
+		margin-left: 3.5%;
+		margin-right: 10%;
+	}
 `
 
 const StyledHeaderText = styled.div`
@@ -54,9 +55,8 @@ const LandingSection = () => (
 		    	<StyledHeaderText>
 		      	<h3>I'm Christopher-Marcus Gibson, and I teach Greek philosophy and the Catholic intellectual tradition.</h3>
 	      	</StyledHeaderText>
-		      <p>At present I am a John and Daria Barry Postdoctoral Research Fellow at the James Madison Program in American Ideals & Institutions at Princeton University.</p>
-		      <p>I am also the Executive Director for the <a href="https://catholicthoughtprinceton.org/" target="_blank">Princeton Initiative in Catholic Thought</a>, a new academic program that aims to sponsor and organize a wide variety of high-caliber courses, lectures, seminars, and other offerings relating to Catholic thought.</p>
-	      	<p>I hold a doctorate (*19) from the Program in Classical Philosophy at Princeton University.  My current research focuses on what Aristotle and Thomas Aquinas can still contribute to our understanding of the role passions play in human life at its best.  I have taught philosophy courses at Princeton and Rutgers, and currently I am teaching a freshman seminar at Princeton on <SyllabusDownloadLink linkText="happiness and human nature in the Catholic intellectual tradition" />.</p>
+		      <p>At present I am the Director of the <a href="https://catholicthoughtprinceton.org/" target="_blank">Princeton Initiative in Catholic Thought</a>, a new academic program that aims to sponsor and organize a wide variety of high-caliber courses, lectures, seminars, and other offerings relating to Catholic thought.</p>
+	      	<p>I hold a doctorate (*19) from the Program in Classical Philosophy at Princeton University.  My current research focuses on what Aristotle and Thomas Aquinas can still contribute to our understanding of the role passions play in human life at its best.  I have taught philosophy courses at Princeton and Rutgers, and I teach a freshman seminar at Princeton on <SyllabusDownloadLink linkText="happiness and human nature in the Catholic intellectual tradition" />.</p>
 	      	<p>Feel free to <a href="mailto:cbgibson@princeton.edu">write to me</a> or <ResumeDownloadLink linkText="view my cv" />.</p>
 	      </StyledTextSection>
 	    </StyledContentSection>
